@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS customers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    firstName TEXT NOT NULL,
+    lastName TEXT NOT NULL,
+    phone TEXT NOT NULL,
+    email TEXT NOT NULL,
+    address TEXT
+);
+
+INSERT INTO customers (firstName, lastName, phone, email, address)
+VALUES ('John', 'Doe', '1234567890', 'john.doe@example.com', '123 Main St, City'),
+       ('Jane', 'Smith', '9876543210', 'jane.smith@example.com', '456 Oak St, Town');
